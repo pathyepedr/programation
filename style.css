@@ -51,6 +51,20 @@ body {
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
 }
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
+
 .botao:first-child{
     border-radius: 40px 40px 0 0;
 }
@@ -88,3 +102,11 @@ body {
   .ativo{
     display: block;
   }
+  .fundo-preto{
+    background: black;
+    color: white;
+  }
+  .botao{
+    padding: 2em; 
+  }
+   
