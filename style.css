@@ -19,7 +19,17 @@ body {
 .conteudo-principal {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;const botoes = document.querySelectorAll(".botao");
+
+    for(let i=0;i <botoes.length;i++){
+       botoes[i].onclick = function(){
+    
+            for(let j=0;j<botoes.length;j++){
+                botoes[j].classList.remove("ativo");
+            }
+            botoes[i].classList.add("ativo");
+            }
+    }
     align-items: center;
     max-width: 1200px;
     width: 100%;
